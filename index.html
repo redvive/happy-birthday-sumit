@@ -5,8 +5,22 @@
 <style>
 body{
 
+body{
+background: linear-gradient(180deg,#0b1026,#16213e,#1e3a8a,#3b82f6);
+min-height:100vh;
+overflow-x:hidden;
+color:white;
+font-family:'Quicksand',sans-serif;
+text-align:center;
+padding:40px;
+}
+
+h1,h2{
+font-family:'Poppins',sans-serif;
+}
+
 .gallery-card h3{
-  font-size:20px;
+font-size:20px;
 }
 
 </style>
@@ -85,7 +99,53 @@ box-shadow:0 8px 30px rgba(0,0,0,.2);
 </style>
 </head>
 <body>
+<div id="loginPage">
 
+<h1>🌙 Secret Birthday Website 🌙</h1>
+
+<p>Enter the password to continue 💙</p>
+
+<input
+id="password"
+type="password"
+placeholder="Password"
+style="padding:12px;border-radius:12px;border:none;text-align:center;">
+
+<br><br>
+
+<button onclick="checkPassword()">
+Unlock 💙
+</button>
+
+</div>
+
+<div id="warningPage" style="display:none;">
+
+<div class="card">
+<h1>⚠️ WARNING ⚠️</h1>
+
+<p>
+This website contains:
+<br><br>
+💙 Excessive appreciation
+<br>
+💙 Embarrassing compliments
+<br>
+💙 Dangerous levels of affection
+<br><br>
+
+Proceed at your own risk.
+</p>
+
+<button onclick="startWebsite()">
+Proceed Anyway 💙
+</button>
+
+</div>
+
+</div>
+
+<div id="mainWebsite" style="display:none;">
 <div class="stars"></div>
 <div class="heart" style="left:10%">💙</div>
 <div class="heart" style="left:25%;animation-delay:2s;">💙</div>
@@ -239,6 +299,37 @@ And imagine me telling you:
 </div>
 </p>
 </div>
+</div>
 
+<script>
+
+function checkPassword(){
+
+let pass =
+document.getElementById("password").value;
+
+if(pass==="2106"){
+
+document.getElementById("loginPage").style.display="none";
+
+document.getElementById("warningPage").style.display="block";
+
+}else{
+
+alert("Wrong Password 😜");
+
+}
+
+}
+
+function startWebsite(){
+
+document.getElementById("warningPage").style.display="none";
+
+document.getElementById("mainWebsite").style.display="block";
+
+}
+
+</script>
 </body>
 </html>
