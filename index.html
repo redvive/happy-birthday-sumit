@@ -46,7 +46,27 @@ animation: twinkle 5s infinite alternate;
 from{opacity:.5;}
 to{opacity:1;}
 }
+.heart{
+position:fixed;
+font-size:22px;
+color:#93c5fd;
+animation:float 10s linear infinite;
+pointer-events:none;
+}
 
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+}
 .card{
 backdrop-filter:blur(12px);
 box-shadow:0 8px 30px rgba(0,0,0,.2);
@@ -56,6 +76,11 @@ box-shadow:0 8px 30px rgba(0,0,0,.2);
 <body>
 
 <div class="stars"></div>
+<div class="heart" style="left:10%">💙</div>
+<div class="heart" style="left:25%;animation-delay:2s;">💙</div>
+<div class="heart" style="left:45%;animation-delay:5s;">💙</div>
+<div class="heart" style="left:65%;animation-delay:1s;">💙</div>
+<div class="heart" style="left:85%;animation-delay:4s;">💙</div>
 
 <h1>🌙💙 Happy 23rd Birthday, Sumit 💙🌙</h1>
 
@@ -105,13 +130,37 @@ Different places, same screen, same laughs. 💙
 <br>
 
 <h2>🎁 Birthday Coupons</h2>
+<h2>🎵 Our Song</h2>
 
+<a href="https://youtu.be/GxldQ9eX2wo" target="_blank">
+<button>Until I Found You 🎶</button>
+</a>
 <p>🎫 One Free Compliment Coupon</p>
 <p>🎫 One Free Movie Night Coupon</p>
 <p>🎫 One Free "You Were Right" Coupon</p>
 
 <br>
+<h2>📸 Sumit Gallery</h2>
 
+<div class="card">
+<p>📷 Mountain Sumit</p>
+</div>
+
+<div class="card">
+<p>📷 Mirror Selfie Sumit</p>
+</div>
+
+<div class="card">
+<p>📷 Flower Filter Sumit</p>
+</div>
+
+<div class="card">
+<p>📷 Dog Dad Sumit</p>
+</div>
+
+<div class="card">
+<p>📷 Pink Hoodie Sumit</p>
+</div>
 <h2>💌 Open When Letters</h2>
 
 <p>Open when you're sad 💙</p>
