@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
 <title>Sumit's Magical Birthday 💙🌙</title>
 <style>
 body{
@@ -8,7 +8,10 @@ body{
 min-height:100vh;
 overflow-x:hidden;
   color:white;
-  font-family:Arial,sans-serif;
+  h1,h2{
+font-family:'Poppins',sans-serif;
+  }
+  font-family:'Quicksand',sans-serif;
   text-align:center;
   padding:40px;
 }
@@ -140,63 +143,92 @@ Different places, same screen, same laughs. 💙
 <p>🎫 One Free "You Were Right" Coupon</p>
 
 <br>
-<h2>📸 Sumit Gallery</h2>
-
-<div class="card">
-<p>📷 Mountain Sumit</p>
-</div>
-
-<div class="card">
-<p>📷 Mirror Selfie Sumit</p>
-</div>
-
-<div class="card">
-<p>📷 Flower Filter Sumit</p>
-</div>
-
-<div class="card">
-<p>📷 Dog Dad Sumit</p>
-</div>
-
-<div class="card">
-<p>📷 Pink Hoodie Sumit</p>
-</div>
-  <br><br>
 
 <h2>📸 Sumit's Photo Album</h2>
 
 <div class="card">
-<img src="IMG-20260619-WA0005.jpg" width="250" style="border-radius:20px;">
+<img src="IMG-20260619-WA0005.jpg" width="180" style="border-radius:15px;">
 <p>🏔️ Adventure Mode Activated</p>
 </div>
 
 <div class="card">
-<img src="IMG-20260619-WA0006.jpg" width="250" style="border-radius:20px;">
+<img src="IMG-20260619-WA0006.jpg" width="180" style="border-radius:15px;">
 <p>😎 Mirror Selfie Champion</p>
 </div>
 
 <div class="card">
-<img src="IMG-20260619-WA0008.jpg" width="250" style="border-radius:20px;">
+<img src="IMG-20260619-WA0008.jpg" width="180" style="border-radius:15px;">
 <p>🌸 Flower Filter Victim</p>
 </div>
 
 <div class="card">
-<img src="IMG-20260619-WA0009.jpg" width="250" style="border-radius:20px;">
+<img src="IMG-20260619-WA0009.jpg" width="180" style="border-radius:15px;">
 <p>🐶 Dog Dad Energy</p>
 </div>
 
 <div class="card">
-<img src="IMG-20260619-WA0010.jpg" width="250" style="border-radius:20px;">
+<img src="IMG-20260619-WA0010.jpg" width="180" style="border-radius:15px;">
 <p>💙 My Favorite Human</p>
 </div>
-
+.gallery-card h3{
+  font-size:20px;
+}
 <br>
 <h2>💌 Open When Letters</h2>
 
-<p>Open when you're sad 💙</p>
-<p>Open when you miss me 🌙</p>
-<p>Open when you need motivation ⭐</p>
-<p>Open when you can't sleep ✨</p>
+<button onclick="document.getElementById('sad').style.display='block'">
+💙 Open when you're sad
+</button>
+
+<div id="sad" class="card" style="display:none;">
+<p>
+If today feels heavy, remember that you've survived every difficult day so far.
+And if you need someone, I'm always here. 💙
+</p>
+</div>
+
+<br>
+
+<button onclick="document.getElementById('miss').style.display='block'">
+🌙 Open when you miss me
+</button>
+
+<div id="miss" class="card" style="display:none;">
+<p>
+If you're reading this, congratulations.
+You've been diagnosed with severe Pragati Withdrawal Syndrome.
+The cure is talking to me. 🌙💙
+</p>
+</div>
+
+<br>
+
+<button onclick="document.getElementById('motivation').style.display='block'">
+⭐ Open when you need motivation
+</button>
+
+<div id="motivation" class="card" style="display:none;">
+<p>
+You are capable of much more than you think.
+Keep going. One step at a time.
+I'm proud of you. ⭐
+</p>
+</div>
+
+<br>
+
+<button onclick="document.getElementById('sleep').style.display='block'">
+✨ Open when you can't sleep
+</button>
+
+<div id="sleep" class="card" style="display:none;">
+<p>
+Put your phone down after reading this.
+Take a deep breath.
+And imagine me telling you:
+"Go sleep, idiot." 💙✨
+</p>
+</div>
 </p>
 </div>
 
