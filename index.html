@@ -66,7 +66,20 @@ radial-gradient(#bfdbfe 2px, transparent 2px);
 background-size:80px 80px,120px 120px,200px 200px;
 animation: twinkle 5s infinite alternate;
 }
-
+.letter-btn{
+display:block;
+width:90%;
+max-width:350px;
+margin:12px auto;
+padding:16px;
+font-size:18px;
+font-weight:600;
+border:none;
+border-radius:18px;
+background:linear-gradient(45deg,#ff5f9e,#ff7eb3);
+color:white;
+box-shadow:0 4px 15px rgba(255,95,158,0.4);
+}
 @keyframes twinkle{
 from{opacity:.5;}
 to{opacity:1;}
@@ -244,7 +257,8 @@ Different places, same screen, same laughs. 💙
 <br>
 <h2>💌 Open When Letters</h2>
 
-<button onclick="document.getElementById('sad').style.display='block'">
+<button class="letter-btn"
+onclick="document.getElementById('sad').style.display='block'">
 💙 Open when you're sad
 </button>
 
@@ -255,12 +269,11 @@ And if you need someone, I'm always here. 💙
 </p>
 </div>
 
-<br>
-
-<button onclick="document.getElementById('miss').style.display='block'">
+<button class="letter-btn"
+onclick="document.getElementById('miss').style.display='block'">
 🌙 Open when you miss me
 </button>
-  
+
 <div id="miss" class="card" style="display:none;">
 <p>
 If you're reading this, congratulations.
@@ -269,9 +282,8 @@ The cure is talking to me. 🌙💙
 </p>
 </div>
 
-<br>
-
-<button onclick="document.getElementById('motivation').style.display='block'">
+<button class="letter-btn"
+onclick="document.getElementById('motivation').style.display='block'">
 ⭐ Open when you need motivation
 </button>
 
@@ -283,9 +295,8 @@ I'm proud of you. ⭐
 </p>
 </div>
 
-<br>
-
-<button onclick="document.getElementById('sleep').style.display='block'">
+<button class="letter-btn"
+onclick="document.getElementById('sleep').style.display='block'">
 ✨ Open when you can't sleep
 </button>
 
