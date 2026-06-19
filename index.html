@@ -4,7 +4,9 @@
 <title>Sumit's Magical Birthday 💙🌙</title>
 <style>
 body{
-  background: linear-gradient(to bottom,#0f172a,#1e293b);
+  background: linear-gradient(180deg,#0b1026,#16213e,#1e3a8a,#3b82f6);
+min-height:100vh;
+overflow-x:hidden;
   color:white;
   font-family:Arial,sans-serif;
   text-align:center;
@@ -25,14 +27,42 @@ button{
   border-radius:30px;
   cursor:pointer;
 }
-#secret{
-  display:none;
+.stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+background-image:
+radial-gradient(white 1px, transparent 1px),
+radial-gradient(#dbeafe 1px, transparent 1px),
+radial-gradient(#bfdbfe 2px, transparent 2px);
+background-size:80px 80px,120px 120px,200px 200px;
+animation: twinkle 5s infinite alternate;
+}
+
+@keyframes twinkle{
+from{opacity:.5;}
+to{opacity:1;}
+}
+
+.card{
+backdrop-filter:blur(12px);
+box-shadow:0 8px 30px rgba(0,0,0,.2);
 }
 </style>
 </head>
 <body>
 
-<h1>🎂 Happy 23rd Birthday, Sumit ❤️</h1>
+<div class="stars"></div>
+
+<h1>🌙💙 Happy 23rd Birthday, Sumit 💙🌙</h1>
+
+<p>
+20 June 2003 ✨<br>
+Built with love by Pragati
+</p>
 
 <div class="card">
 <h2>For My Favorite Human</h2>
@@ -43,11 +73,11 @@ Thank you for all the laughs, conversations, patience and memories.
 </div>
 
 <button onclick="document.getElementById('secret').style.display='block'">
-Open Your Birthday Message 🎁
+Proceed Anyway ⚠️💙
 </button>
 
 <div class="card" id="secret">
-<h2>💌 A Message For You</h2>
+<h2>💌 Dear Sumit,</h2>
 <p>
 Happy Birthday, idiot ❤️<br><br>
 
@@ -63,6 +93,31 @@ peace, and everything you've been wishing for.
 
 Love,
 Pragati ❤️
+<br><br>
+
+<h2>🎬 Our Movie Nights</h2>
+
+<p>
+One of my favorite things is watching movies together on video call.
+Different places, same screen, same laughs. 💙
+</p>
+
+<br>
+
+<h2>🎁 Birthday Coupons</h2>
+
+<p>🎫 One Free Compliment Coupon</p>
+<p>🎫 One Free Movie Night Coupon</p>
+<p>🎫 One Free "You Were Right" Coupon</p>
+
+<br>
+
+<h2>💌 Open When Letters</h2>
+
+<p>Open when you're sad 💙</p>
+<p>Open when you miss me 🌙</p>
+<p>Open when you need motivation ⭐</p>
+<p>Open when you can't sleep ✨</p>
 </p>
 </div>
 
